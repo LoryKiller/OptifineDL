@@ -41,7 +41,7 @@ print (fulltitle) #Print title
 print("Select program language (default: English):")
 print("[1] English")
 print("[2] Italian/Italiano")
-language = input()
+language = input('>> ')
 
 
 
@@ -95,10 +95,10 @@ print(fulltitle) #Print title
 #Write "debug" to enter debug mode and see debug outputs
 
 print(colored(l1,'red'))
-version = input(l2 + '\n')
+version = input(l2 + '\n' + '>> ')
 if version == ("debug"):
     dbug = 1
-    version = input(l2 +'\n' + 'Debug mode' + '\n')
+    version = input(l2 +'\n' + 'Debug mode' + '\n' + '>> ')
     print(dbug)
 #----------------------------------------------------
 
