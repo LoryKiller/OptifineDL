@@ -122,13 +122,19 @@ if dbug == 1:
 print (l3)
 
 while True:
-    data = getUrl(mcversion=str(version), single=True, timeout=15)
+    data = getUrl(mcversion=str(version),  timeout=15) #single=True,
     if "408" not in data:
         if dbug == 1:
          print(data)
 
         break
 #-----------------------------------------------------------------------
+
+#Take last value of dictionary
+
+data = list(data)[-1]
+if dbug == 1: 
+    print(data)
 
 # Preparing URL for download---------
 print(l4)
